@@ -5,6 +5,8 @@
 - npm
 - bower
 - gulp
+- ruby (gems)
+- SASS gem (3.4.*)
 
 ### Running
 1. run `npm install`
