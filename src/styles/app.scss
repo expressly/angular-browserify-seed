@@ -20,3 +20,23 @@ a, a:visited {
   text-decoration: none;
 }
 
+.header {
+  i {
+    font-size: $peintre-logo-font-size;
+  }
+  div:nth-child(2) {
+    font-family: $peintre-header-font-family;
+    font-size: $peintre-logo-font-size;
+  }
+}
+
+.footer {
+  position: $peintre-footer-position;
+  bottom: $peintre-footer-bottom;
+  width: $peintre-footer-width;
+  p {
+    margin: $peintre-footer-text-margin;
+  }
+  font-family: $peintre-common-font-family;
+  font-size: $peintre-common-font-size;
+}

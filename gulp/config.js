@@ -18,7 +18,8 @@ global.config = {
             templatesCompiled: TMP_FOLDER,
             livereload: [BUILD_FOLDER + '/**/*', '!' + BUILD_FOLDER + '/assets/**/*'],
             modules: './' + SRC_FOLDER + '/modules/index.js',
-            config: SRC_FOLDER + '/modules/app/config.json'
+            config: SRC_FOLDER + '/modules/app/config.json',
+            fontAwesome: 'bower_components/components-font-awesome/fonts/*.*'
         },
         dest: {
             build: {
@@ -26,6 +27,7 @@ global.config = {
                 scripts: BUILD_FOLDER,
                 images: BUILD_FOLDER + '/assets/images',
                 assets: BUILD_FOLDER + '/assets',
+                fonts: BUILD_FOLDER + '/assets/fonts',
                 index: BUILD_FOLDER,
                 server: BUILD_FOLDER
             },
@@ -34,6 +36,7 @@ global.config = {
                 scripts: RELEASE_FOLDER,
                 images: RELEASE_FOLDER + '/assets/images',
                 assets: RELEASE_FOLDER + '/assets',
+                fonts: BUILD_FOLDER + '/assets/fonts',
                 index: RELEASE_FOLDER,
                 server: RELEASE_FOLDER
             }

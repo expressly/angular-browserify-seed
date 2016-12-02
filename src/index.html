@@ -7,7 +7,22 @@
     <!--styles-->
 </head>
 <body>
-<div class="container" ng-view></div>
+  <div class="container">
+    <div class="row header">
+      <div class="hidden-xs col-sm-1 col-md-2 col-sm-offset-3">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      </div>
+      <div class="col-sm-7 col-md-4 col-lg-3">Peintre</div>
+    </div>
+    <div class="row main">
+      <div class="col-xs-12" ng-view></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p>Myshenin Anton, <a href="https://github.com/myshenin/angular-browserify-seed">Fork</a></p>
+    </div>
+  </div>
 <!--scripts-->
 <!--config-->
 </body>
