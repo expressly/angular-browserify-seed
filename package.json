@@ -1,45 +1,51 @@
 {
-    "private": "true",
-    "engines": {
-        "node": ">=0.12.0"
-    },
-    "devDependencies": {
-        "browserify": "4.2.3",
-        "browserify-shim": "^3.6.0",
-        "connect": "^2.24.2",
-        "gulp": "^3.8.0",
-        "gulp-header": "1.2.2",
-        "gulp-angular-templatecache": "^1.2.1",
-        "gulp-autoprefixer": "0.0.8",
-        "gulp-concat": "2.6.0",
-        "gulp-csso": "^0.2.9",
-        "gulp-if": "^1.2.1",
-        "gulp-imagemin": "^0.6.1",
-        "gulp-jshint": "^1.6.2",
-        "gulp-livereload": "^2.1.0",
-        "gulp-minify-html": "^0.1.4",
-        "gulp-ng-annotate": "^0.1.1",
-        "gulp-ng-config": "^1.2.1",
-        "gulp-rename": "^1.2.0",
-        "gulp-replace": "^0.4.0",
-        "gulp-rimraf": "^0.1.0",
-        "gulp-ruby-sass": "^0.7.1",
-        "gulp-uglify": "^0.3.0",
-        "gulp-watch": "^0.6.9",
-        "jshint-stylish": "^0.2.0",
-        "karma": "^0.12.31",
-        "run-sequence": "^0.3.6",
-        "vinyl-source-stream": "^0.1.1",
-        "watchify": "^0.10.2",
-        "yargs": "^1.2.2"
-    },
-    "browser": {
-        "angular": "./bower_components/angular/angular.min.js",
-        "angular-route": "./bower_components/angular-route/angular-route.min.js",
-        "angular-animate": "./bower_components/angular-animate/angular-animate.min.js",
-        "angular-aria": "./bower_components/angular-aria/angular-aria.min.js",
-        "angular-material": "./bower_components/angular-material/angular-material.min.js",
-        "angular-translate": "./bower_components/angular-translate/angular-translate.min.js"
-    },
-    "browserify-shim": {}
+  "private": "true",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "devDependencies": {
+    "browserify": "4.2.3",
+    "browserify-shim": "^3.6.0",
+    "connect": "^2.24.2",
+    "gulp": "^3.8.0",
+    "gulp-header": "1.2.2",
+    "gulp-angular-templatecache": "^1.2.1",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-concat": "2.6.0",
+    "gulp-csso": "^0.2.9",
+    "gulp-if": "^1.2.1",
+    "gulp-imagemin": "^0.6.1",
+    "gulp-jshint": "^1.6.2",
+    "gulp-livereload": "^2.1.0",
+    "gulp-minify-html": "^0.1.4",
+    "gulp-ng-annotate": "^0.1.1",
+    "gulp-ng-config": "^1.2.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.4.0",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-uglify": "^0.3.0",
+    "gulp-watch": "^0.6.9",
+    "jshint-stylish": "^0.2.0",
+    "karma": "^0.12.31",
+    "run-sequence": "^0.3.6",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^0.10.2",
+    "yargs": "^1.2.2"
+  },
+  "browser": {
+    "angular": "./bower_components/angular/angular.min.js",
+    "angular-route": "./bower_components/angular-route/angular-route.min.js",
+    "angular-animate": "./bower_components/angular-animate/angular-animate.min.js",
+    "angular-aria": "./bower_components/angular-aria/angular-aria.min.js",
+    "angular-material": "./bower_components/angular-material/angular-material.min.js",
+    "angular-translate": "./bower_components/angular-translate/angular-translate.min.js"
+  },
+  "browserify-shim": {},
+  "dependencies": {
+    "imagemin-gifsicle": "^5.1.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-pngquant": "^5.0.0"
+  }
 }
