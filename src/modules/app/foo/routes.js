@@ -3,11 +3,11 @@
 module.exports = /*ngInject*/
   function ($routeProvider) {
     $routeProvider
-      .when("/", {
+      .when("/image/:id", {
         templateUrl: "app/foo/templates/image-view.html",
         controller: "imageViewController"
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/image/1'
       });
   };

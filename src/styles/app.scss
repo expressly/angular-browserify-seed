@@ -30,6 +30,19 @@ a, a:visited {
   }
 }
 
+.main {
+  .image-viewer {
+    margin: $peintre-image-viewer-margin;
+    > div {
+      > div:nth-child(2) {
+        > div {
+          margin: $peintre-image-viewer-margin;
+        }
+      }
+    }
+  }
+}
+
 .footer {
   position: $peintre-footer-position;
   bottom: $peintre-footer-bottom;
