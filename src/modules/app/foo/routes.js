@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = /*ngInject*/
-    function ($routeProvider) {
-        $routeProvider
-            .when('/bar', {
-                templateUrl: 'app/foo/templates/bar.html',
-                controller: 'barController'
-            })
-            .otherwise({
-                redirectTo: '/bar'
-            });
-    };
+  function ($routeProvider) {
+    $routeProvider
+      .when("/image/:id", {
+        templateUrl: "app/foo/templates/image-view.html",
+        controller: "imageViewController"
+      })
+      .otherwise({
+        redirectTo: '/image/1'
+      });
+  };
