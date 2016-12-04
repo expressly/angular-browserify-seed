@@ -47,4 +47,8 @@ a, a:visited {
   display: inline-block;
   margin: $peintre-image-block-margin;
   width: $peintre-image-block-width;
+  .title {
+    color: $peintre-image-block-link-color;
+    text-decoration: $peintre-image-block-link-text-decoration;
+  }
 }
