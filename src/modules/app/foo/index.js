@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports =
-  angular.module('expressly.foo', [])
+  angular.module('expressly.foo', ['infinite-scroll'])
     .config(require('./routes.js'))
     .config(require('./i18n/en.js'))
     .controller('barController', require('./controllers/bar.controller'))
