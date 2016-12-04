@@ -5,7 +5,7 @@ module.exports = /*@ngInject*/
     var amount = 40;
     $http.get("http://jsonplaceholder.typicode.com/photos")
       .then(function (res) {
-          $scope.images = res.data.slice(0, 40);
+          $scope.images = res.data.slice(0, 10);
         }
       )
       .catch(function (error) {

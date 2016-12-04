@@ -1,3 +1,9 @@
-<div infinite-scroll='loadMore()' infinite-scroll-distance='1'>
-  <img ng-repeat='image in images' ng-src='{{image.thumbnailUrl}}'>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div infinite-scroll='loadMore()' infinite-scroll-distance='1'>
+        <img ng-repeat='image in images' ng-src='{{image.thumbnailUrl}}'>
+      </div>
+    </div>
+  </div>
 </div>
