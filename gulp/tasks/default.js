@@ -7,14 +7,14 @@ module.exports = gulp.task('default', function () {
   if (release) {
     runSequence(
       'clean',
-      ['index', 'bowerStyles', 'styles', 'images', 'assets', 'templates', 'lint', 'env'],
+      ['index', 'bowerStyles', 'styles', 'images', 'assets', 'font-awesome', 'templates', 'lint', 'env'],
       'browserify'
       ['minify']
     );
   } else {
     runSequence(
       'clean',
-      ['index', 'bowerStyles', 'styles', 'images', 'assets', 'templates', 'lint', 'env'],
+      ['index', 'bowerStyles', 'styles', 'images', 'assets', 'font-awesome', 'templates', 'lint', 'env'],
       ['watchify', 'watch', 'serve']
     );
   }

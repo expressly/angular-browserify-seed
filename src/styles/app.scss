@@ -20,3 +20,35 @@ a, a:visited {
   text-decoration: none;
 }
 
+.header {
+  i {
+    font-size: $peintre-logo-font-size;
+  }
+  div:nth-child(2) {
+    font-family: $peintre-header-font-family;
+    font-size: $peintre-logo-font-size;
+  }
+}
+
+.main {
+  .image-viewer {
+    margin: $peintre-image-viewer-margin;
+    > div {
+      > div:nth-child(2) {
+        > div {
+          margin: $peintre-image-viewer-margin;
+        }
+      }
+    }
+  }
+}
+
+.image-block {
+  display: inline-block;
+  margin: $peintre-image-block-margin;
+  width: $peintre-image-block-width;
+  .title {
+    color: $peintre-image-block-link-color;
+    text-decoration: $peintre-image-block-link-text-decoration;
+  }
+}

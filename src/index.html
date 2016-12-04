@@ -3,11 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peintre</title>
     <!--bowerStyles-->
     <!--styles-->
 </head>
 <body>
-<div class="container" ng-view></div>
+  <div class="container">
+    <div class="row header">
+      <div class="hidden-xs col-sm-1 col-md-2 col-sm-offset-3">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      </div>
+      <div class="col-sm-7 col-md-4 col-lg-3">Peintre</div>
+    </div>
+    <div class="row main">
+      <div class="col-xs-12" ng-view></div>
+    </div>
+  </div>
 <!--scripts-->
 <!--config-->
 </body>
