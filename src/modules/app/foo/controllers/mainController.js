@@ -5,7 +5,7 @@ module.exports = /*@ngInject*/
     var amount = 40;
     $http.get("http://jsonplaceholder.typicode.com/photos")
       .then(function (res) {
-          $scope.images = res.data.slice(0, 10);
+          $scope.images = res.data.slice(0, 15);
         }
       )
       .catch(function (error) {
@@ -15,7 +15,7 @@ module.exports = /*@ngInject*/
     $scope.loadMore = function () {
       $http.get("http://jsonplaceholder.typicode.com/photos")
         .then(function (res) {
-            $scope.images = $scope.images.concat(res.data.slice(amount, amount += 10));
+            $scope.images = $scope.images.concat(res.data.slice(amount, amount += 3));
           }
         )
         .catch(function (error) {

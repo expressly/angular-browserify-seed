@@ -1,8 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-6 col-xs-offset-3">
+    <div class="col-xs-12 col-sm-9 col-sm-offset-1 col-md-10 col-md-offset-1">
       <div infinite-scroll='loadMore()' infinite-scroll-distance='1'>
-        <img ng-repeat='image in images' ng-src='{{image.thumbnailUrl}}'>
+        <div ng-repeat='image in images' class="image-block">
+          <div>
+            <img ng-src='{{image.thumbnailUrl}}'>
+          </div>
+          <div>{{image.title}}</div>
+        </div>
       </div>
     </div>
   </div>

@@ -43,13 +43,8 @@ a, a:visited {
   }
 }
 
-.footer {
-  position: $peintre-footer-position;
-  bottom: $peintre-footer-bottom;
-  width: $peintre-footer-width;
-  p {
-    margin: $peintre-footer-text-margin;
-  }
-  font-family: $peintre-common-font-family;
-  font-size: $peintre-common-font-size;
+.image-block {
+  display: inline-block;
+  margin: $peintre-image-block-margin;
+  width: $peintre-image-block-width;
 }
