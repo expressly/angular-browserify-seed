@@ -1,13 +1,25 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-  function mainController($scope) {
-    $scope.images = [1, 2, 3, 4, 5, 6, 7, 8];
+  function mainController($scope, $http) {
+    $http.get("http://jsonplaceholder.typicode.com/photos")
+      .then(function (res) {
+          $scope.images = res.data.slice(0, 40);
+        }
+      )
+      .catch(function (error) {
+        console.log(error);
+      });
 
     $scope.loadMore = function () {
-      var last = $scope.images[$scope.images.length - 1];
-      for (var i = 1; i <= 8; i++) {
-        $scope.images.push(last + i);
-      }
+      $http.get("http://jsonplaceholder.typicode.com/photos")
+        .then(function (res) {
+            var last = $scope.images.length;
+            $scope.images.push(res.data.slice(last, last + 40));
+          }
+        )
+        .catch(function (error) {
+          console.log(error);
+        });
     };
   };
